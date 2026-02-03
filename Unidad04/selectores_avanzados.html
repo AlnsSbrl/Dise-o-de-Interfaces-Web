@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        a[href$=".zip"]:before, a[href$=".rar"]:before {
+            content: "💊";
+        }
+        a[href$=".rar"],a[href$=".zip"] {
+            color: orange;
+        }
+        a[href^="https://"]{
+            color: green;
+        }
+        a[href^="https://"]:after{
+            content: "🔗";
+        }
+        ul > li:first-child{
+            color: #2B3558; /*bold blue*/
+        }
+        ul > li:nth-child(odd){
+            background-color: lawngreen;
+        }
+        ul > li:nth-child(even){
+            background-color: lightgray;
+        }
+        h1:before,h2:before{
+            content: "*";
+            color: green;
+        }
+        tr > td{
+            background-color: lightyellow;
+        }
+        input[type="text"]:focus{
+            border: 5px solid red;
+        }
+        form:has(>input[type="text"]):after{
+            content: "(Campo obligatorio)";
+            color: red;
+            /*Como estoy cogiendo el formulario, y los inputs no tienen content, me lo coloca _después_ del formulario entero*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Pokemon Run and Bun</h1>
+    <h2>Pokemon Run and Bun es una romhack de dificultad con base en Pokemon esmeralda, aunque incluye Pokemon más actuales</h2>
+    <p>Ejemplos de pokemons más recientes:</p>
+    <ul>
+        <li>Barraskewda</li>
+        <li>Primarina</li>
+        <li>Eldegoss</li>
+        <li>Ursaluna</li>
+        <li>Urshifu</li>
+    </ul>
+
+    <p>Campeones destacados en modo difícil</p>
+    <table>
+        <tr>
+            <th>Persona</th>
+            <th>Fecha</th>
+            <th>Pokemon destacado</th>
+        </tr>
+        <tr>
+            <td>Byonemil</td>
+            <td>02-08-2024</td>
+            <td>Alakazam</td>
+        </tr>
+        <tr>
+            <td>Pchal</td>
+            <td>31-08-2024</td>
+            <td>Heracross</td>
+        </tr>
+        <tr>
+            <td>SmallAnt</td>
+            <td>29-10-2025</td>
+            <td>Archeops</td>
+        </tr>
+    </table>
+    <a href="Run&BunChampionHallofFame.zip">Lista completa de campeones en modo difícil</a>
+    <br>
+    <a href="https://web.archive.org/web/20250815213203/https://dex.runandbun.com/pokemon/">Lista de pokemon del juego</a>
+    <br>
+    <form>
+        <label for="username">Nombre</label>
+        <input type="text" name="username" id="username">
+        <br>
+        <button>Enviar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css" media="screen">
+        h1{
+            color: green;
+            background-color: yellow;
+            text-align: center;
+        }
+        p{
+            color: blue;
+            font-size: 16px;
+        }
+        p:nth-child(4) {
+            /*es el 4 porque es el cuarto hijo del body, aunque los 3 hijos anteriores sean otro elemento html*/
+            color: black;
+        }
+        h2,h3{
+            color: red;
+            font-style: italic;
+        }
+        .borderedElement{
+            border-style: solid;
+            border-color: grey;
+            border-width: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="borderedElement">Bienvenidos a mi página</h1>
+    <h2 class="borderedElement">Este es un subtítulo de ejemplo</h2>
+    <h3 class="borderedElement">Esto también, aunque no lo parezca</h3>
+    <p>Lea el último párrafo</p>
+    <p>Este no es el último párrafo, lea el siguiente</p>
+    <p>Buen chico</p>
+</body>
+</html>
