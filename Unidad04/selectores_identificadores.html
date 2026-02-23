@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 04</title>
+    <style>
+        #cabecera{
+            border: 1px solid green;
+            background-color: lightgray;
+            padding: 5px;
+            margin:  20px 5px;
+        }
+        .contenido{
+            background-color: lightblue;
+            border: 1px solid green;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin:  20px 5px;
+        }
+        .columna1{
+            margin: 5px 10px 5px 5px;
+            flex: 1;
+            background-color: sandybrown;
+            border: 1px solid green;
+        }
+        .columna2{
+            margin: 5px 10px 5px 5px;
+            flex: 2;
+            background-color: sandybrown;
+            border: 1px solid green;
+        }
+        .piepagina{
+            border: 1px solid green;
+            background-color: palegreen;
+            margin: 20px 5px;
+            padding: 5px;
+        }
+        .textonegrita{
+            font-weight: bold;
+        }
+        .textorojo{
+            color: red;
+        }
+        .cursiva{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <section id="cabecera">
+        <h1>Ejemplo con Dos Columnas</h1>
+        <p>Esta es la cabecera del documento. Contiene el título principal y una breve descripción.</p>
+    </section>
+    <section class="contenido">
+        <div class="columna1">
+            <h2>Columna Izquierda</h2>
+            <ul>
+                <li class="textonegrita">Elemento 1 en negrita</li>
+                <li class="textorojo">Elemento 2 en rojo</li>
+                <li class="textorojo textonegrita">Elemento 3 en rojo y negrita</li>
+            </ul>
+        </div>
+        <div class="columna2">
+            <h2>Columna Derecha</h2>
+            <p class="cursiva">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum lorem a odio posuere, eu luctus purus pharetra. Praesent dictum diam vitae arcu fermentum, consectetur porta tellus lacinia. Pellentesque in risus id ante auctor accumsan in vel orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec quis erat sed neque convallis dapibus. Suspendisse porttitor mauris et eros placerat pulvinar. Sed sollicitudin maximus ligula, vel semper erat aliquam viverra. Pellentesque a velit metus.
+            </p>
+            <p class="cursiva">
+                Nullam blandit, justo eget euismod egestas, felis lorem congue velit, nec mattis sapien quam eget arcu. Etiam tristique dolor ut dapibus luctus. Pellentesque fringilla quam at lorem semper ultrices. Vestibulum mauris magna, interdum nec leo nec, tempor cursus mi. Aenean luctus non quam sed facilisis. Etiam mattis, mauris vitae viverra aliquam, eros ipsum ornare neque, ac rhoncus tellus magna in nibh. Sed nec suscipit dolor, sed fringilla dolor. Etiam vitae ligula arcu. Nullam dignissim sapien sem, sit amet condimentum leo rutrum quis. Nam sapien mauris, pulvinar quis ultrices eget, efficitur et mauris. Nulla ac sagittis turpis. Suspendisse sed augue at quam venenatis vulputate. Donec ullamcorper scelerisque scelerisque. Etiam sit amet tellus velit. Etiam viverra bibendum magna eget pulvinar.
+            </p>
+            <p class="cursiva textorojo">
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam eget mi et odio vestibulum volutpat. Sed sed accumsan nunc. Sed fermentum purus non elit viverra hendrerit. Donec pretium convallis ante eget blandit. Vestibulum consectetur finibus purus. Maecenas fermentum semper pharetra. Praesent porta nibh est, quis rhoncus nulla lobortis ac.
+            </p>
+            <p class="cursiva">
+                Morbi venenatis, dolor at lobortis bibendum, lacus dui dictum tortor, sed ultricies arcu tellus nec dolor. Donec maximus magna velit, eu ullamcorper dui tempor at. Aliquam semper ex turpis, eu tincidunt sapien pharetra at. Donec varius, sapien id euismod congue, ipsum nisi lacinia leo, id placerat elit velit aliquam lectus. Mauris eget magna elit. Cras commodo iaculis nisl sed eleifend. Praesent ullamcorper mi a metus dignissim consectetur eu in orci. Phasellus ultrices nulla vitae sapien consectetur varius. Fusce semper, felis sed consequat varius, ex turpis consectetur est, vitae imperdiet eros odio nec ex.
+            </p>
+            <p class="cursiva">
+                In maximus pharetra lacus, vestibulum semper dui vulputate non. Integer non magna pellentesque, hendrerit odio mollis, vulputate diam. Aenean id mi rhoncus, molestie augue et, dictum justo. Vivamus ut aliquet lorem. Donec lacinia vehicula velit ac auctor. Etiam aliquam vehicula mi, vitae suscipit enim. Morbi sed magna ut eros scelerisque sagittis mattis vitae eros. Ut venenatis lacinia lorem eu semper.
+            </p>
+        </div>
+    </section>
+    <section class="piepagina">
+        <p>Aquí está el pie de página. <a href="#cabecera">Ir a la cabecera</a></p>
+    </section>
+</body>
+</html>

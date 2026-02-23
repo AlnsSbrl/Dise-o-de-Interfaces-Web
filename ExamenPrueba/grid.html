@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid</title>
+    <style>
+        @font-face {
+            font-family: 'playwritein';
+            src: url("./PlaywriteIN-VariableFont_wght.ttf")format('truetype');
+        }
+        #contenedor{
+            display: grid;
+            width: 600px;
+            grid-template-columns:200px auto auto 150px;
+            grid-template-rows: auto 100px 75px auto;
+            gap: 20px;
+            padding: 20px;
+            border-style: dotted;
+        }
+        #contenedor>*{
+            font-family: 'playwritein';
+            border-style: solid;
+        }
+        #A{
+            grid-row:1;
+            grid-column: 2/5;
+        }
+        #B{
+            grid-row:1/4;
+            grid-column: 1;
+        }
+        #C{
+            grid-row:3;
+            grid-column: 4/5;
+        }
+        #D{
+            grid-row:2/4;
+            grid-column:2/4;
+        }
+        #E{
+            grid-row:4;
+            grid-column: 1/4;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="A">A</div>
+        <div id="B">B</div>
+        <div id="C">C</div>
+        <div id="D">D</div>
+        <div id="E">E</div>
+    </div>
+</body>
+</html>

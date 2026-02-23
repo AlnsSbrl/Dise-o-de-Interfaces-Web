@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarjeta</title>
+    <style>
+        @font-face {
+            font-family: 'gruppo';
+            src: url("Gruppo-Regular.ttf") format("truetype");
+        }
+        header{
+            display: flex;
+            background-color: lightseagreen;
+            color: aliceblue;
+            justify-content: space-around;
+            font-family: 'gruppo';
+            align-items: center;
+            width: 400px;
+            border-radius: 15px 15px 0 0;
+        }
+        header > *{
+            padding: 20px;
+        }
+        header h1{
+            color:black;
+        }
+        header h5{
+        }
+        body{
+            background-color: #f4f4f4;
+        }
+        button{
+            border-radius: 7px;
+        }
+        .contenedor{
+            font-family: 'gruppo';
+            color: aliceblue;
+            background-color: lightseagreen;
+            max-width: 400px;
+            max-height: 230px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 0 0 15px 15px;
+
+        }
+        .contenedor>*{
+            padding: 20px;
+        }
+        .secondrow{
+            justify-content: space-around;
+            align-items: center;
+        }
+        .secondrow h5{
+            letter-spacing: 4px;
+            word-spacing: 6px;
+        }
+        .contenedor div{
+            display: flex;
+        }
+        .contenedor div *{
+        }
+        #chip{
+            width: 55px;
+            height: 40px;
+            border-radius: 10px ;
+        }
+        #exit{
+            color:lightseagreen;
+            background-color: aliceblue;
+        }
+        #exit:hover{
+            background-color: #ccc;
+        }
+        .footer{
+
+            border-style: double none none none;
+            border-color:seagreen;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .footer button{
+            font-family: 'gruppo';
+            color: aliceblue;
+            background-color: seagreen;
+        }
+        .footer button:hover{
+            background-color: rgb(36,106,66);
+        }
+        #pagar{
+            background-color: goldenrod;
+        }
+        #pagar:hover{
+            background-color: darkgoldenrod;
+        }
+    </style>
+</head>
+<header>
+        <h1>BANCO</h1>
+        <h5>Crédito</h5>
+        <button id="exit">x</button>
+</header>
+<body>
+<div class="contenedor">
+    <div class="secondrow">
+        <img id="chip" src="chip.jpg" alt="">
+        <h5>4000 0012 3456 7899</h5>
+    </div>
+<div class="footer">
+    <button>Ver CVV</button>
+    <button>Saldo</button>
+    <button id="pagar">Pagar</button>
+</div>
+</div>
+</body>
+</html>

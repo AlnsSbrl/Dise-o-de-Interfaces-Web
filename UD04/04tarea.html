@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Migas Amigas</title>
+    <style>
+        :root{
+            --negro: rgb(87,87,87);
+            --negroclaro: rgb(133,132,132);
+            --grisoscuro: rgb(191,186,186);
+            --grismedio: rgb(211,211,211);
+            --grisclaro: rgb(238,238,238);
+            --blanco: rgb(255,255,255);
+            --azul: rgb(60,116,230);
+        }
+        body{
+            background-color: var(--grismedio);
+        }
+        #cabecera{
+            background-color: var(--negro);
+            color: var(--blanco);
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            justify-content: space-between;
+        }
+        #cabeceralogotitulo{
+            display: flex;
+        }
+        #cabeceralogotitulo > img{
+            width:150px;
+            height:auto;
+            margin: 10px;
+        }
+        #cabecera > ul{
+            justify-content: space-between;
+        }
+        #cabecera > ul > li{
+            display: inline;
+        }
+        #body{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+        #lateralizquierdo{
+            margin-top: 30px;
+            display:flex;
+            flex-direction: column;
+            flex:2;
+        }
+        #contenido{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            flex:5;
+        }
+        .titulofecha{
+            background-color: var(--azul);
+            display: flex;
+            justify-content: space-between;
+            border-radius: 5px;
+
+        }
+        .post{
+            background-color: var(--grisoscuro);
+            padding: 20px;
+        }
+        .titulofecha > h4{
+            color: var(--blanco);
+        }
+        .titulofecha > h6{
+            color: var(--blanco);
+        }
+        .cuerpopost{
+            background-color: var(--blanco);
+        }
+        #lateralizquierdo > form{
+            border: 1px solid var(--negroclaro);
+            display: flex;
+            flex-direction: column;
+
+        }
+        #lateralizquierdo > form > button{
+            margin: 5px;
+        }
+        #lateralderecho{
+            margin-top: 30px;
+            display: flex;
+            flex:2;
+        }
+        .unidadesdetrabajo{
+            background-color: var(--grisclaro);
+            display: flex;
+            flex-direction: column;
+            padding: 0 30px 30px 30px;
+        }
+        .unidadesdetrabajo > h3{
+            padding: 10px;
+            background-color: var(--azul);
+            color: var(--blanco);
+        }
+        .unidadesdetrabajo > h5{
+            font-weight: bold;
+        }
+        .unidadesdetrabajo > h5, .unidadesdetrabajo > a{
+            padding: 0 15px;
+        }
+        #footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <section id="cabecera">
+        <div id="cabeceralogotitulo">
+            <img src="Logotipo_del_Ministerio_de_Educación_y_Formación_Profesional.svg.png" alt="">
+            <h4>TodoFP</h4>
+        </div>
+        <ul>
+            <li>Inicio</li>
+            <li>Formación</li>
+            <li>Cursos</li>
+            <li>Alumnado</li>
+            <li>Ayuda</li>
+        </ul>
+    </section>
+    <section id="body">
+        <section id="lateralizquierdo">
+            <form>
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <button>Enviar</button>
+            </form>
+            <div class="unidadesdetrabajo">
+                <h3>Unidades de trabajo</h3>
+                <h5>DIW01,2011</h5>
+                <a href="https://www.google.com/" id="tema1">Planificacion de interfaces gráficas </a>
+                <h5>DIW01,2011</h5>
+                <a href="https://www.google.com/" id="tema2">Accesibilidad en la Web... </a>
+                <h5>DIW01,2011</h5>
+                <a href="https://www.google.com/" id="tema3">Usabilidad en la Web... </a>
+                <h5>DIW01,2011</h5>
+                <a href="https://www.google.com/" id="tema4">Hojas de estilos... </a>
+                <h5>DIW01,2011</h5>
+                <a href="https://www.google.com/" id="tema5">Contenidos multimedia en la Web: Imágenes... </a>
+            </div>
+        </section>
+        <section id="contenido">
+            <div class="post">
+                <div class="titulofecha">
+                    <h4>¡BIENVENIDO A TODOFP!</h4>
+                    <h6>Oct,10,2011</h6>
+                </div>
+                <div class="cuerpopost">
+                    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+                </div>
+                <div class="Creador">
+                    <h6>Realizado por Manuel <a href="https://todofp.es/">TodoFP</a>|<a href="https://www.iessanclemente.net/">IES San Clemente </a>
+                    </h6>
+                </div>
+            </div>
+            <div class="post">
+                <div class="titulofecha">
+                    <h4>DIW04. HOJAS DE ESTILOS</h4>
+                    <h6>Oct,10,2011</h6>
+                </div>
+                <div class="cuerpopost">
+                    <p>Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la sección 1.10.32</p>
+                </div>
+                <div class="Creador">
+                    <h6>Realizado por Manuel <a href="https://todofp.es/">TodoFP</a>|<a href="https://www.iessanclemente.net/">IES San Clemente </a>
+                    </h6>
+                </div>
+            </div>
+        </section>
+        <section id="lateralderecho">
+            <div class="unidadesdetrabajo">
+                <h3>Webs de interés</h3>
+                <a href="https://todofp.es/">TodoFP </a>
+                <a href="https://fpadistancia.edu.xunta.gal/login/index.php">FP a distancia </a>
+                <a href="https://platega.edu.xunta.gal/">Platega </a>
+                <a href="https://www.iessanclemente.net/">IES San Clemente </a>
+            </div>
+        </section>
+    </section>
+    <section id="footer">
+        <h6>Copyright @ 2011 Todo FP</h6>
+    </section>
+</body>
+</html>

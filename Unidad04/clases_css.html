@@ -19,56 +19,32 @@
         .azul{
             color: blue;
         }
-        /*
-        style:
-        clases especificas:
-        DONE-h1.rojo: aplica rojo al texto h1
-        DONE-h2.verde: aplica verde a h2
-
-        clases genericas:
-        DONE-.negrita: aplica negrita al texto
-        DONE-.cursiva: aplica cursiva
-        DONE-.azul: aplica color azul
-
-        estiliza los elementos tal que:
-        DONE -h1 y h2 aplican clases especificas
-        -combina las clases especificas con las genericas
-
-        -estiliza partes especificas del texto con <span> y combina clases genericas
-        DONE-cada elemento <li> debe mostrar una combinacion diferente de clases genericas
-
-        DONE-enlace aplica la clase azul para que el texto del enlace aparezca en azul
-
-
-
-        DONE html: titulo h1 y dos subs h2
-        parrafo con contenido parcialmente estilizado usando <span> para ponerle colores negrita y cursiva
-        otro parrafo que combine dos estilos <span  con varias clases>
-
-        lista desordenada ul con 5 elementos, cada uno con combinaciones diferentes de estilos
-        enlace externo que apunte a google
-        */
     </style>
 </head>
-<body>
-    <h1>Ejercicio práctico de escritura en japonés</h1>
-    <h2>Escribiré aquí una historia en japonés</h2>
-    <h2>koko de nihongo de hanashi wo kakimasu</h2>
-<span>
-    Tanaka-san tiene 3 gatos. Se llaman: Benito, Pedro y Fito. Benito es negro pero Pedro y Fito son blancos y marrones.
-</span>
-<span class="cursiva azul">
-    Tanaka san ha neko ga sanbiki imasu. Namae ha benito, peduro to fuito. Benito ha kuroneko desu ga peduro to fuito ha shirokutechairo neko desu.
-</span>
-<p>Comidas favoritas de los gatos de Tanaka</p>
-<p>Tanaka san no neko no sukina tabemono</p>
-<ul>
-    <li class="azul">Pescado - Sakana</li>
-    <li class="cursiva">Leche - Gyuunyuu</li>
-    <li class="negrita">Pajaros - Tori</li>
-    <li class="cursiva negrita">Cables - Waia</li>
-    <li class="negrita azul">Flores - Hana</li>
-</ul>
-<a href="https://google.com/" class="azul">Buscar más en Google sobre los gatos de Tanaka</a>
-</body>
+    <body>
+        <h1 class="azul">Ejercicio práctico de escritura en japonés</h1>
+        <h2 class="negrita">Escribiré aquí una historia en japonés</h2>
+        <h2 class="cursiva">ここで日本語で話を書きます。</h2>
+        <p>
+            Tanaka tiene 3 gatos.
+            <span class="negrita cursiva">
+                Se llaman: Benito, Pedro y Fito.
+            </span>
+            Benito es negro pero Pedro y Fito son blancos y marrones.
+            <br>
+            <span class="azul cursiva">
+                田中さんは猫が三匹います。名前はベニㇳ、ぺドロとフィトです。ベニㇳは黒猫ですがぺドロとフィトは白くて茶色猫です。
+            </span>
+        </p>
+        <p>Comidas favoritas de los gatos de Tanaka</p>
+        <p>田中さんの猫の好きな食べ物</p>
+        <ul>
+            <li class="azul">Pescado - 魚</li>
+            <li class="cursiva">Leche - 牛乳</li>
+            <li class="negrita">Pajaros - とり</li>
+            <li class="cursiva negrita">Cables - ワイア</li>
+            <li class="negrita azul">Flores - 花</li>
+        </ul>
+        <a href="https://google.com/" class="azul">Buscar más en Google sobre los gatos de Tanaka</a>
+    </body>
 </html>

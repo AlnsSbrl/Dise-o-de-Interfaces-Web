@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 06</title>
+    <style>
+        @font-face{
+            font-family: 'Shingo';
+            src: url("AOTFShinGoProMedium.otf") format("opentype");
+        }
+        body{
+            font-family: 'Shingo';
+        }
+        h1{
+            color: red;
+            text-align: center;
+        }
+        h2{
+            color: #2B3558;
+            text-align: center;
+        }
+        h4{
+            color: sandybrown;
+            text-align: center;
+        }
+        ol > li{
+           color: green;
+        }
+        @media print {
+            #break{page-break-after: always;}
+            h1, h2,h4, ol > li{
+                color: black;
+            }
+        }
+        @page{
+            size: A5 landscape;
+            margin: 10mm;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="break">Pitbull</h1>
+    <h1>Letras de canciones de pitbull</h1>
+    <h2>Se ha descubierto recientemente que Pitbull ha copiado sus canciones de escritos romanos</h2>
+    <p>Estas son las lyrics de las canciones de la antigua roma</p>
+    <ol type="I">
+        <li>Primus</li>
+        <li>Secundus</li>
+        <li>Tertius</li>
+        <li>Quartus</li>
+        <li>Date</li>
+    </ol>
+</body>
+</html>
