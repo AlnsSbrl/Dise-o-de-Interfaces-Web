@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Ejemplo de inserción de elemento de &lt;video&gt;</h1>
+
+<p>A continuación podrás ver un vídeo de lluvia:</p>
+    <div class="video-container">
+    <video controls width="640" poster="media/poster.jpg">
+        <source src="media/video.mp4" type="video/mp4">
+        <source src="media/video.webm" type="video/webm">
+        <!-- Subtítulos en español (activados por defecto) -->
+        <track kind="subtitles" src="media/subtitulos.vtt" srclang="es" label="Español" default>
+        <!-- Subtítulos en inglés -->
+        <track kind="subtitles" src="media/subtitles.vtt" srclang="en" label="English">
+        Tu navegador no soporta la etiqueta de vídeo.
+    </video>
+</div>
+</body>
+</html>

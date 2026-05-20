@@ -1,0 +1,50 @@
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 120px;
+    font-size: 34px;
+    border-radius: 50%;
+    background-color: #333;
+    text-align: center;
+    box-shadow: 10px 10px 0 rgba(255,255,255,1);
+    line-height: 60px;
+}
+body{
+    background-image: url("../img/eurovision_background.avif");
+    background-size: cover;
+}
+.light{
+    animation: flash 1s infinite alternate;
+}
+@keyframes flash{
+    from{background-color: cyan;}
+    to{background-color: fuchsia;}
+}
+
+.microphone{
+    animation: vibrate 0.2s infinite;
+}
+@keyframes vibrate{
+    0%{transform: translateX(-2px);}
+    50%{transform: translateX(0px);}
+    100%{transform: translateX(2px);}
+}
+
+.flag{
+    animation: rotate 1.5s ease-in-out infinite;
+}
+@keyframes rotate{
+    0%{transform: rotateZ(0deg);}
+    50%{transform: rotateZ(10deg);}
+    100%{transform: rotateZ(0deg);}
+
+}

@@ -1,0 +1,40 @@
+.galeria{
+    display:flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.contenedor{
+    position: relative;
+    width:20%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 10px 10px 10px black ;
+}
+.foto{
+    height:400px;
+}
+h1{
+    text-align: center;
+}
+#bede{
+    background-image: url("img/fairy.jpg");
+    background-size: cover;
+    border-radius: 20px;
+}
+#maxie{
+    background-image: url("img/fire.jpg");
+    background-size: cover;
+    border-radius: 20px;
+}
+#corbeau{
+    background-image: url("img/poison.jpg");
+    background-size: cover;
+    border-radius: 20px;
+}
+#cyrus{
+    background-image: url("img/giratina.jpg");
+    background-size: cover;
+    border-radius: 20px;
+}
